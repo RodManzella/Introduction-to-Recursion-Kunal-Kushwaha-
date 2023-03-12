@@ -25,4 +25,14 @@ public class Nto1{
         System.out.println(n);
         
     }
+
+    static void funcBoth(int n){
+        if(n == 0){
+            return;
+        }
+
+        System.out.println(n); // will print n when making the function calls
+        funcBoth(n - 1);
+        System.out.println(n);  // will print n when removing from stack
+    }
 }
